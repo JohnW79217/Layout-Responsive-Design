@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #e8f0f8;
+  padding: 2.5rem 0;
+}
+
+.content-section {
+  padding: 2.5rem 0;
+}
+
+.content-section.alt {
+  background-color: #ffffff;
+}
+
+h2 {
+  margin-top: 0;
+  color: #003366;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+.landmark-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.landmark-card img {
+  margin: 0 0 1rem 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.landmark-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #003366;
+}
+
+.reflection {
+  background-color: #f0f4f8;
+  padding: 2.5rem 0;
+}
+
+.reflection ol {
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.reflection li {
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .hero,
+  .content-section,
+  .reflection {
+    padding: 1.75rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .landmark-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+}

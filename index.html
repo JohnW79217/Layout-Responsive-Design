@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Philadelphia | The City of Brotherly Love</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Philadelphia</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#landmarks">Landmarks</a></li>
+          <li><a href="#culture">Culture & Food</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview" class="hero">
+      <div class="container">
+        <h2>Welcome to Philadelphia</h2>
+        <p>Philadelphia, Pennsylvania, is a vibrant city known as the birthplace of American democracy. With its rich history, diverse neighborhoods, world-class museums, and delicious food scene, it offers something for everyone. From the cobblestone streets of Old City to the modern skyline along the Schuylkill River, Philadelphia blends the past and present seamlessly.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/The_Philadelphia_skyline.jpg/960px-The_Philadelphia_skyline.jpg" alt="Philadelphia skyline reflected in the Schuylkill River on a clear day">
+      </div>
+    </section>
+
+    <section id="history" class="content-section">
+      <div class="container">
+        <h2>A Brief History</h2>
+        <p>Founded in 1682 by William Penn, Philadelphia quickly grew into one of the most important cities in the American colonies. It served as the meeting place for the Continental Congress and the Constitutional Convention. On July 4, 1776, the Declaration of Independence was adopted here, and later the U.S. Constitution was drafted and signed at Independence Hall.</p>
+        <p>Throughout the 19th and 20th centuries, Philadelphia became a major industrial and cultural center, home to innovations in medicine, education, and the arts. Today, it remains a key city on the East Coast with a strong sense of community and history.</p>
+      </div>
+    </section>
+
+    <section id="landmarks" class="content-section alt">
+      <div class="container">
+        <h2>Iconic Landmarks</h2>
+        <div class="landmark-grid">
+          <article class="landmark-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Independence_hall_Philadelphia.jpg/960px-Independence_hall_Philadelphia.jpg" alt="Independence Hall in Philadelphia, where the Declaration of Independence was signed">
+            <h3>Independence Hall</h3>
+            <p>This historic building is where both the Declaration of Independence and the Constitution were signed. It stands as a powerful symbol of American liberty.</p>
+          </article>
+          <article class="landmark-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Liberty_Bell_and_Stairway%2C_Independence_Hall%2C_Philadelphia%2C_PA_c.1905.jpg" alt="Historic photograph of the Liberty Bell inside Independence Hall">
+            <h3>The Liberty Bell</h3>
+            <p>The famous cracked bell once rang to announce important events. It now resides in a modern pavilion near Independence Hall and attracts millions of visitors each year.</p>
+          </article>
+        </div>
+        <p>Other must-see sites include the Philadelphia Museum of Art, the Rocky steps, Reading Terminal Market, and the Eastern State Penitentiary. The city also features beautiful parks like Fairmount Park, one of the largest urban parks in the United States.</p>
+      </div>
+    </section>
+
+    <section id="culture" class="content-section">
+      <div class="container">
+        <h2>Culture and Food</h2>
+        <p>Philadelphia is famous for its food, especially the cheesesteak, soft pretzels, water ice, and Italian specialties from South Philadelphia. Neighborhoods like Chinatown, the Italian Market, and University City offer incredible diversity in cuisine and culture.</p>
+        <p>The city hosts major events like the Philadelphia International Festival of the Arts, the Flower Show, and sports teams including the Eagles, Phillies, Sixers, and Flyers. With universities such as the University of Pennsylvania and Temple University, it also has a lively student population.</p>
+        <p>Whether you're exploring the murals of the Mural Arts Program, walking along the Delaware River waterfront, or enjoying a concert at the Kimmel Center, Philadelphia has a welcoming and energetic atmosphere.</p>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <div class="container">
+        <h2>Reflection</h2>
+        <ol>
+          <li>The most significant layout issue was that navigation links stayed in a horizontal row and content used rigid widths, which caused the page to overflow and become hard to use on phones and tablets.</li>
+          <li>I applied a centered container with max-width and margin auto, set box-sizing to border-box on all elements, made images fully responsive with max-width 100% and height auto, and used a media query to stack the navigation and tighten spacing below 768 pixels.</li>
+          <li>On wide screens the navigation stayed horizontal with generous spacing and the content remained comfortably centered. On narrow viewports the menu stacked vertically, padding decreased, and images scaled down so the page stayed readable without horizontal scrolling.</li>
+          <li>Testing at different widths showed how even small fixed sizes or missing media queries quickly break mobile layouts. Checking the page at the required sizes helped me catch spacing and overflow problems before they reached users.</li>
+          <li>Next I would add a collapsible hamburger menu for the smallest screens and use the picture element or srcset so images load the most efficient size for each device.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Discover Philadelphia. <a href="https://github.com/JohnW79217">View the GitHub repository</a></p>
+    </div>
+  </footer>
+</body>
+</html>
